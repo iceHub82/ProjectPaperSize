@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Paper Size</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <div class="container-fluid p-2">
+    <div class="row">
+      <div class="col py-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-1 border">
+        <div class="row">
+          <div class="col">
+            <div class="form-check form-switch">
+              <label class="form-check-label" for="darkmodeSwitch">DarkMode</label>
+              <input class="form-check-input" type="checkbox" role="switch" id="darkmodeSwitch">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="menu">
+              <p>Page Size</p>
+              <input type="radio" id="A5" name="pageSize" value="A5">
+              <label for="A5">A5</label><br>
+              <input type="radio" id="A4" name="pageSize" value="A4" checked>
+              <label for="css">A4</label><br>
+              <input type="radio" id="A3" name="pageSize" value="A3">
+              <label for="A3">A3</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="menu">
+              <p>Page Layout</p>
+              <input type="radio" id="Portrait" name="pageLayout" value="portrait" checked>
+              <label for="Portrait">Portrait</label><br>
+              <input type="radio" id="Landscape" name="pageLayout" value="landscape">
+              <label for="Landscape">Landscape</label><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col border p-3">
+        <div id="tabsWrapper" class="tab-content">
+          <div class="tab-pane fade active show"  role="tabpanel">
+            <page id="page-wrapper" size="A4" layout="portrait">
+            </page>
+          </div>
+        </div>       
+      </div>
+    </div>
+  </div>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>
