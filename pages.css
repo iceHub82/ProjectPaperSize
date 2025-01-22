@@ -53,6 +53,7 @@ page[size=A5][layout=landscape] {
 }
 
 .dark-page {
-  background-color: #6e6969;
+  background: #6e6969;
   color: #e6e6e6;
+  box-shadow: 0 0 0.5cm rgba(255, 255, 255, 0.5);
 }
